@@ -2,7 +2,7 @@
 node_modules
 
 # vendored SourceAFIS jars (downloaded via `bun run setup`; fastutil is ~23 MB)
-vendor/sourceafis/*.jar
+# vendor/sourceafis/*.jar
 
 # generated artifacts
 *.bin
