@@ -1,6 +1,14 @@
 # dependencies (bun install)
 node_modules
 
+# vendored SourceAFIS jars (downloaded via `bun run setup`; fastutil is ~23 MB)
+vendor/sourceafis/*.jar
+
+# generated artifacts
+*.bin
+key.bin
+template.bin
+
 # output
 out
 dist
@@ -32,3 +40,5 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+tests

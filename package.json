@@ -1,8 +1,21 @@
 {
   "name": "fingerprint-image-matching",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "High-accuracy fingerprint image matching for payment authentication, powered by SourceAFIS, running on Bun/TypeScript.",
   "type": "module",
+  "module": "src/index.ts",
   "private": true,
+  "bin": {
+    "fpmatch": "src/index.ts"
+  },
+  "scripts": {
+    "setup": "bun run scripts/fetch-jars.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "sourceafis-js": "0.1.7"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
