@@ -14,7 +14,6 @@ import { fileURLToPath } from "node:url";
 
 const MAVEN = "https://repo1.maven.org/maven2";
 
-// group/artifact/version — pinned to match the SourceAFIS 3.18.1 release.
 const ARTIFACTS = [
   "com/machinezoo/sourceafis/sourceafis/3.18.1/sourceafis-3.18.1.jar",
   "com/machinezoo/stagean/stagean/1.3.0/stagean-1.3.0.jar",
